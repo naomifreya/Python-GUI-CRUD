@@ -8,7 +8,7 @@ def create():
     namefile = nama.get()
     h = teks.get("1.0",tk.END).strip()
     if namefile == "":
-            messagebox.showwarning ("Peringatan", "Masukan nama file")
+            messagebox.showwarning ("Warning", "Masukan nama file")
             return
     try:
         with open(namefile + '.txt',"w") as f:
